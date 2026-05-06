@@ -12,11 +12,7 @@
     async function main() {
       await liff.init({ liffId: "2005680378-9IEdIFKO" });
 
-      // เปิดนอก LINE
-      liff.openWindow({
-        url: "https://jariyathum.ac.th/timetable_system/leaves_sys/leave_dashboard.php",
-        external: true
-      });
+     
 
       // ปิดหน้าปัจจุบัน (ใน LINE)
       if (liff.isInClient()) {
