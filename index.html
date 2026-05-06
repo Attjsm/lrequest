@@ -7,7 +7,23 @@
 </head>
 <body>
   <p>ก...</p>
+<script>
+  
+      
+      // เปิดนอก LINE
+      liff.openWindow({
+        url: "https://jariyathum.ac.th/timetable_system/leaves_sys/leave_dashboard.php",
+        external: true
+      });
 
+      // ปิดหน้าปัจจุบัน (ใน LINE)
+      if (liff.isInClient()) {
+        liff.closeWindow();
+      }
+    }
+
+    main();
+  </script>
  
 </body>
 </html>
